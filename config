@@ -113,13 +113,15 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 #default = $mod+w
 bindsym $mod+t layout tabbed
-bindsym $mod+e layout toggle split
+
+#default = $mod+e
+bindsym $mod+space layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -267,6 +269,8 @@ bindsym XF86AudioPrev exec playerctl previous
 #Desktop image
 exec_always feh --bg-fill $HOME/Pictures/desktop.jpg
 
+#file system
+bindsym $mod+e exec "nemo" 
 
 #assigning to workspaces
 assign [class="Spotify"] $ws10
