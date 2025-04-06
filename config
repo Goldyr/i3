@@ -233,6 +233,7 @@ bar {
     position bottom
     workspace_buttons yes
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    tray_output $left_screen
     colors {
         # bar background color
         background $bg
